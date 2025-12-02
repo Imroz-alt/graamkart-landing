@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraamKart - आपके शहर में 10 मिनट डिलीवरी</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">🛒 GraamKart</div>
+                <div class="space-x-4">
+                    <a href="#how-it-works" class="hover:text-gray-200 text-sm md:text-base">कैसे काम करता है</a>
+                    <a href="#survey" class="bg-white text-orange-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 text-sm md:text-base">जल्दी शुरू करें</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-4">
+                        🎉 जल्द ही आपके शहर में आ रहा है!
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                        आपके शहर में<br/>
+                        <span class="text-yellow-300">10 मिनट</span> में<br/>
+                        सब कुछ डिलीवरी
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">
+                        किराना, दवाई, सब्जी - सब कुछ घर पर, बस 10 मिनट में। 
+                        अपने शहर के दुकानदारों से सीधे ऑर्डर करें।
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#survey" class="pulse-animation bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 shadow-lg text-center">
+                            मुझे चाहिए! 🚀
+                        </a>
+                        <a href="#how-it-works" class="border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-orange-600 text-center">
+                            और जानें
+                        </a>
+                    </div>
+                    <p class="mt-6 text-sm opacity-75">✨ पहले 100 यूजर्स को फ्री डिलीवरी • कोई छुपा हुआ चार्ज नहीं</p>
+                </div>
+                <div class="hidden md:block">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
+                        <div class="text-6xl mb-4 text-center">🛵</div>
+                        <div class="space-y-4">
+                            <div class="bg-white/20 p-4 rounded-xl">
+                                <div class="flex items-center gap-3">
+                                    <div class="text-3xl">🥛</div>
+                                    <div>
+                                        <div class="font-bold">दूध, अंडे, ब्रेड</div>
+                                        <div class="text-sm opacity-75">10 मिनट में</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white/20 p-4 rounded-xl">
+                                <div class="flex items-center gap-3">
+                                    <div class="text-3xl">💊</div>
+                                    <div>
+                                        <div class="font-bold">दवाई और हेल्थ प्रोडक्ट्स</div>
+                                        <div class="text-sm opacity-75">15 मिनट में</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white/20 p-4 rounded-xl">
+                                <div class="flex items-center gap-3">
+                                    <div class="text-3xl">🥬</div>
+                                    <div>
+                                        <div class="font-bold">ताज़ी सब्जी और फल</div>
+                                        <div class="text-sm opacity-75">20 मिनट में</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">क्या आपको भी ये परेशानी होती है?</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-red-50 p-6 rounded-xl border-2 border-red-200">
+                <div class="text-4xl mb-4">😓</div>
+                <h3 class="text-xl font-bold mb-2">दुकान दूर है</h3>
+                <p class="text-gray-700">छोटी सी चीज़ के लिए भी दुकान तक जाना पड़ता है। समय और पैसा दोनों बर्बाद।</p>
+            </div>
+            <div class="bg-yellow-50 p-6 rounded-xl border-2 border-yellow-200">
+                <div class="text-4xl mb-4">⏰</div>
+                <h3 class="text-xl font-bold mb-2">समय की कमी</h3>
+                <p class="text-gray-700">ऑफिस, घर का काम - इतना व्यस्त कि शॉपिंग के लिए समय ही नहीं मिलता।</p>
+            </div>
+            <div class="bg-orange-50 p-6 rounded-xl border-2 border-orange-200">
+                <div class="text-4xl mb-4">🌧️</div>
+                <h3 class="text-xl font-bold mb-2">मौसम की मार</h3>
+                <p class="text-gray-700">बारिश, गर्मी या ठंड - किसी भी मौसम में बाहर जाना मुश्किल हो जाता है।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div id="how-it-works" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">कैसे काम करता है?</h2>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-2">1. ऐप खोलें</h3>
+                    <p class="text-gray-600">अपने मोबाइल से GraamKart ऐप खोलें या WhatsApp पर मैसेज करें</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">🛒</div>
+                    <h3 class="text-xl font-bold mb-2">2. ऑर्डर करें</h3>
+                    <p class="text-gray-600">अपने पसंदीदा प्रोडक्ट्स चुनें। आपके शहर की दुकानों से मिलेगा</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">🛵</div>
+                    <h3 class="text-xl font-bold mb-2">3. तेज़ डिलीवरी</h3>
+                    <p class="text-gray-600">हमारा डिलीवरी पार्टनर 10-20 मिनट में आपके घर पहुंचा देगा</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-2">4. पेमेंट करें</h3>
+                    <p class="text-gray-600">UPI, कार्ड या कैश - जैसे चाहें वैसे पेमेंट करें</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">क्या-क्या मिलेगा?</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-gradient-to-br from-green-400 to-green-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">🥬</div>
+                <h3 class="font-bold text-lg">सब्जी और फल</h3>
+            </div>
+            <div class="bg-gradient-to-br from-blue-400 to-blue-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">🥛</div>
+                <h3 class="font-bold text-lg">किराना</h3>
+            </div>
+            <div class="bg-gradient-to-br from-red-400 to-red-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">💊</div>
+                <h3 class="font-bold text-lg">दवाई</h3>
+            </div>
+            <div class="bg-gradient-to-br from-purple-400 to-purple-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">👶</div>
+                <h3 class="font-bold text-lg">बेबी प्रोडक्ट्स</h3>
+            </div>
+            <div class="bg-gradient-to-br from-yellow-400 to-yellow-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">🍞</div>
+                <h3 class="font-bold text-lg">बेकरी</h3>
+            </div>
+            <div class="bg-gradient-to-br from-pink-400 to-pink-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">🧴</div>
+                <h3 class="font-bold text-lg">पर्सनल केयर</h3>
+            </div>
+            <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">🏠</div>
+                <h3 class="font-bold text-lg">घर का सामान</h3>
+            </div>
+            <div class="bg-gradient-to-br from-orange-400 to-orange-600 p-6 rounded-xl text-white text-center hover:scale-105 transition">
+                <div class="text-5xl mb-3">📱</div>
+                <h3 class="font-bold text-lg">रिचार्ज</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Survey Section -->
+    <div id="survey" class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">हमें बताएं आपकी राय!</h2>
+                <p class="text-center mb-8 text-lg opacity-90">
+                    पहले 100 लोगों को मिलेगा <span class="font-bold text-yellow-300">फ्री डिलीवरी</span> का लाइफटाइम पास! 🎁
+                </p>
+                
+                <form class="space-y-6" id="surveyForm">
+                    <div>
+                        <label class="block mb-2 font-semibold">आपका नाम *</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300" placeholder="अपना नाम लिखें">
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">मोबाइल नंबर *</label>
+                        <input type="tel" required pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300" placeholder="10 अंकों का नंबर">
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">आप कहाँ रहते हैं? *</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300" placeholder="शहर/गाँव का नाम">
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">क्या आप ऑनलाइन शॉपिंग करते हैं? *</label>
+                        <select required class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300">
+                            <option value="">चुनें</option>
+                            <option value="yes-often">हाँ, अक्सर करता/करती हूँ</option>
+                            <option value="yes-sometimes">हाँ, कभी-कभी</option>
+                            <option value="no">नहीं, कभी नहीं किया</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">आप सबसे ज्यादा क्या ऑर्डर करेंगे? *</label>
+                        <div class="space-y-2">
+                            <label class="flex items-center bg-white/10 p-3 rounded-lg cursor-pointer hover:bg-white/20">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>किराना (आटा, चावल, दाल, तेल)</span>
+                            </label>
+                            <label class="flex items-center bg-white/10 p-3 rounded-lg cursor-pointer hover:bg-white/20">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>दवाई और हेल्थ प्रोडक्ट्स</span>
+                            </label>
+                            <label class="flex items-center bg-white/10 p-3 rounded-lg cursor-pointer hover:bg-white/20">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>सब्जी और फल</span>
+                            </label>
+                            <label class="flex items-center bg-white/10 p-3 rounded-lg cursor-pointer hover:bg-white/20">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>बेबी प्रोडक्ट्स (डायपर, फॉर्मूला)</span>
+                            </label>
+                            <label class="flex items-center bg-white/10 p-3 rounded-lg cursor-pointer hover:bg-white/20">
+                                <input type="checkbox" class="mr-3 w-5 h-5">
+                                <span>पर्सनल केयर</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">डिलीवरी के लिए कितना पेमेंट करेंगे? *</label>
+                        <select required class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300">
+                            <option value="">चुनें</option>
+                            <option value="free">फ्री होनी चाहिए</option>
+                            <option value="10-20">₹10-20</option>
+                            <option value="20-30">₹20-30</option>
+                            <option value="30-50">₹30-50</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">कितनी जल्दी डिलीवरी चाहिए? *</label>
+                        <select required class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300">
+                            <option value="">चुनें</option>
+                            <option value="10min">10 मिनट</option>
+                            <option value="30min">30 मिनट</option>
+                            <option value="1hour">1 घंटा</option>
+                            <option value="same-day">उसी दिन कभी भी</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">पेमेंट कैसे करना पसंद करेंगे? *</label>
+                        <select required class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300">
+                            <option value="">चुनें</option>
+                            <option value="upi">UPI (PhonePe, GPay, Paytm)</option>
+                            <option value="cod">Cash on Delivery</option>
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="any">कोई भी चलेगा</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block mb-2 font-semibold">कुछ और बताना चाहेंगे?</label>
+                        <textarea class="w-full px-4 py-3 rounded-lg text-gray-800 focus:ring-4 focus:ring-orange-300" rows="3" placeholder="आपकी राय हमारे लिए बहुत जरूरी है..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 shadow-xl pulse-animation">
+                        सबमिट करें और फ्री डिलीवरी पाएं! 🎉
+                    </button>
+                    
+                    <p class="text-center text-sm opacity-75">
+                        हम आपकी जानकारी को सुरक्षित रखेंगे। कोई स्पैम नहीं, वादा! 🤝
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits -->
+    <div class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">GraamKart क्यों चुनें?</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">⚡</div>
+                <h3 class="text-xl font-bold mb-2">सुपर फास्ट</h3>
+                <p class="text-gray-600">10-20 मिनट में डिलीवरी। बड़े शहरों जैसी सुविधा, अपने शहर में।</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">🏪</div>
+                <h3 class="text-xl font-bold mb-2">लोकल दुकानें</h3>
+                <p class="text-gray-600">आपके शहर की दुकानों से सीधे। लोकल बिजनेस को सपोर्ट करें।</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">💰</div>
+                <h3 class="text-xl font-bold mb-2">सस्ते दाम</h3>
+                <p class="text-gray-600">दुकान जैसे ही दाम। कोई एक्स्ट्रा चार्ज नहीं।</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">✅</div>
+                <h3 class="text-xl font-bold mb-2">क्वालिटी गारंटी</h3>
+                <p class="text-gray-600">ताज़ा और अच्छा सामान। पसंद न आए तो वापस कर दें।</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">📞</div>
+                <h3 class="text-xl font-bold mb-2">आसान सपोर्ट</h3>
+                <p class="text-gray-600">कोई प्रॉब्लम हो तो तुरंत कॉल करें। हम हमेशा आपके साथ हैं।</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl mx-auto mb-4">🎁</div>
+                <h3 class="text-xl font-bold mb-2">ऑफर्स और डिस्काउंट</h3>
+                <p class="text-gray-600">रोज़ नए ऑफर्स। ज्यादा बचत, ज्यादा खुशी।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">तैयार हैं अपने शहर में GraamKart लाने के लिए?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                पहले 100 लोगों को मिलेगा <span class="font-bold text-yellow-300">लाइफटाइम फ्री डिलीवरी!</span>
+            </p>
+            <a href="#survey" class="inline-block bg-white text-orange-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 shadow-xl pulse-animation">
+                अभी रजिस्टर करें →
+            </a>
+            <p class="mt-4 text-sm opacity-75">⏰ सिर्फ 23 स्लॉट बचे हैं!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-white text-xl font-bold mb-4">🛒 GraamKart</div>
+                    <p class="text-sm">आपके शहर में तेज़ डिलीवरी का नया तरीका।</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">कंपनी</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">हमारे बारे में</a></li>
+                        <li><a href="#" class="hover:text-white">करियर</a></li>
+                        <li><a href="#" class="hover:text-white">ब्लॉग</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">पार्टनर बनें</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">दुकानदार रजिस्ट्रेशन</a></li>
+                        <li><a href="#" class="hover:text-white">डिलीवरी पार्टनर</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">संपर्क करें</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>📧 hello@graamkart.in</li>
+                        <li>📱 +91 98765 43210</li>
+                        <li>📍 आपके शहर में जल्द</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>© 2025 GraamKart. सर्वाधिकार सुरक्षित। Made with ❤️ for Bharat</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('🎉 धन्यवाद! आपका रजिस्ट्रेशन हो गया है। हम जल्द ही आपसे संपर्क करेंगे!\n\nआपको लाइफटाइम फ्री डिलीवरी मिल गई है! 🚀');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
